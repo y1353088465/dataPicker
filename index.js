@@ -640,8 +640,13 @@ class picker {
 
     sure(success){
       let sbDom = document.getElementsByClassName("sure_btn")[0];   
-      sbDom.onclick = function(){        
-        success(province[this.p_index]+city[this.p_index][this.c_index]+area[this.p_index][this.c_index][this.a_index]);
+      sbDom.onclick = function(){    
+        let obj = {
+          provice:province[this.p_index],
+          city:city[this.p_index][this.c_index],
+          area:area[this.p_index][this.c_index][this.a_index],
+        };
+        success(obj);
         document.getElementsByClassName("picker_mask_")[0].style.display = "none";
         document.getElementsByClassName("data_list_box")[0].style.display = "none";
       }.bind(this)
@@ -656,10 +661,8 @@ class picker {
       }
     }
     showPicker(){
-      let spDom = document.getElementById(this.showDom);   
-      console.log(111)      
+      let spDom = document.getElementById(this.showDom);       
       spDom.onclick = function (){
-        console.log(111)
         document.getElementsByClassName("picker_mask_")[0].style.display = "flex";
         document.getElementsByClassName("data_list_box")[0].style.display = "flex";
       }

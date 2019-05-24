@@ -1,4 +1,4 @@
-/* author by Mr Yang .If you use it, please feel grateful.*/
+/* author by Mr Yang */
 *{
     margin:0;
     padding:0;
@@ -45,7 +45,8 @@ ul{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    box-shadow: 2px 2px 15px 2px #ccc;
+    /*box-shadow: 2px 2px 15px 2px #ccc;*/
+    border-bottom:1px solid #ccc;
     padding:0 30px;    
 }
 #demo .data_list_box .event_btns span{
@@ -68,7 +69,11 @@ ul{
 #demo .data_list_box .data_list li p{
     line-height: 30px;
     text-align: center;
+    color:#ccc;
 }
+
 .picker_choosed_active{
-    background:#ccc;
+    border-radius:3px;
+    border:1px solid #ccc;
+    color:#000!important;
 }

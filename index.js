@@ -541,6 +541,7 @@ class picker {
         this.sure(success);
         this.cancel();
         this.showPicker();
+        this.picker_mask_click();
     }
     //初始化省循环出数据
     eachProvince(){
@@ -667,6 +668,13 @@ class picker {
         document.getElementsByClassName("data_list_box")[0].style.display = "flex";
       }
     }
+    picker_mask_click(){
+        document.getElementsByClassName("picker_mask_")[0].onclick = function(){
+            document.getElementsByClassName("picker_mask_")[0].style.display = "none";
+            document.getElementsByClassName("data_list_box")[0].style.display = "none";
+        }
+
+    }
 }
 
-/*author by Mr Yang.If you use it, please feel grateful.*/
+/*author by Mr Yang*/

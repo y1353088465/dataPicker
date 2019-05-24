@@ -10,6 +10,7 @@
  `<link rel="stylesheet" href="./index.css"/>`
 
 引用方式
+
 new picker({
 
             el:"demo",//必须，节点绑定

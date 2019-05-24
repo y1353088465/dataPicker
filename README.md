@@ -7,7 +7,7 @@
  <script src="./index.js"></script>
 
 
- <link rel="stylesheet" href="./index.css"/>
+ `<link rel="stylesheet" href="./index.css"/>`
 
 引用方式
 new picker({

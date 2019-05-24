@@ -2,7 +2,7 @@
 # dataPicker
 省市区三级联动 兼容性高，使用相当相当简单
 引入文件
- <script src="./index.js"></script>    
+ <script src="./index.js"></script>
  <link rel="stylesheet" href="./index.css">
 
 引用方式   new picker({\n

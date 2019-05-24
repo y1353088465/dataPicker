@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>    
+    <title>Document</title>
+</head>
+<body>
+    <div id="show_picker">召唤联动</div>     
+    <div id="demo"></div>
+    <script>
+        new picker({
+            el:"demo",//必须，节点绑定
+            showDom:"show_picker",//绑定页面dom元素 控制picker显示隐藏
+            //返回的地址信息
+            success:function success(data){
+                console.log(data)
+            }
+        })
+    </script>
+    <!-- author by Mr Yang .If you use it, please feel grateful.-->
+    <!-- If you have any questions in use, please contact the author. -->
+    <!-- Kindly give us your advice -->
+    <!-- 多多指教 -->
+    <!-- vx/qq:1353088465 -->
+</body>
+</html>

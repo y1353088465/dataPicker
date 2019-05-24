@@ -1,0 +1,74 @@
+/* author by Mr Yang .If you use it, please feel grateful.*/
+*{
+    margin:0;
+    padding:0;
+}
+ul{
+    list-style: none;
+}
+#demo{
+    width:100vw;
+}
+#show_picker{
+    width:100px;
+    line-height: 40px;
+    border-radius:5px;
+    border:1px solid #ccc;
+    color:#ccc;
+    margin:0 auto;
+    text-align:center;
+}
+#demo .picker_mask_{
+    position: fixed;
+    width:100vw;
+    height:100vh;
+    background: rgba(0,0,0,.4);
+    left:0;
+    top:0;
+    z-index: 9999;
+    display: none;
+}
+#demo .data_list_box{
+    position: fixed;
+    left:0;
+    bottom:0;
+    z-index: 10000;
+    background: #fff;
+    height:38%;
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    display: none;    
+}
+#demo .data_list_box .event_btns{
+    line-height: 28px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    box-shadow: 2px 2px 15px 2px #ccc;
+    padding:0 30px;    
+}
+#demo .data_list_box .event_btns span{
+    color:#763e9a;
+}
+#demo .data_list_box .data_list{
+    flex:1;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding:10px;
+    overflow: hidden;
+}
+#demo .data_list_box .data_list li{
+    flex:1;
+    overflow-y: scroll;
+    height:100%;
+    -webkit-overflow-scrolling: touch;
+}
+#demo .data_list_box .data_list li p{
+    line-height: 30px;
+    text-align: center;
+}
+.picker_choosed_active{
+    background:#ccc;
+}

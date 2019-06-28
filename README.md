@@ -13,9 +13,9 @@
 
 new picker({
 
-            el:"demo",//必须，节点绑定
+            el:"demo",//id选择器 ， 必须，节点绑定
 
-            showDom:"show_picker",//绑定页面dom元素 控制picker显示隐藏
+            showDom:"show_picker",//id选择器，绑定页面dom元素 控制picker显示隐藏
 
             //返回的地址信息
 
